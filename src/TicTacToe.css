@@ -1,0 +1,131 @@
+/* TicTacToe.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .tic-tac-toe {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    background: #fffae6;
+    border: 2px solid #eeeeee;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .square.X {
+    color: #4CAF50; /* Green for X */
+  }
+  
+  .square.O {
+    color: #F44336; /* Red for O */
+  }
+  
+  .square:hover {
+    background: #f9f9f9;
+  }
+  
+  .status {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  /* Stile per i pulsanti generali */
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 5px;
+  }
+  
+  .button.reset {
+    background: #4CAF50; /* Verde per Reset */
+  }
+  
+  .button.reset:hover {
+    background: #45a049;
+  }
+  
+  .button.end-game {
+    background: #F44336; /* Rosso per Fine Gioco */
+  }
+  
+  .button.end-game:hover {
+    background: #e53935;
+  }
+  
+  /* Popup migliorato per la selezione della modalità di gioco */
+  .game-mode-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .game-mode-popup h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .game-mode-popup button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 5px;
+  }
+  
+  .game-mode-popup .single-player {
+    background: #2196F3; /* Blu per Giocatore Singolo */
+  }
+  
+  .game-mode-popup .single-player:hover {
+    background: #1e88e5;
+  }
+  
+  .game-mode-popup .multiplayer {
+    background: #4CAF50; /* Verde per Multiplayer */
+  }
+  
+  .game-mode-popup .multiplayer:hover {
+    background: #45a049;
+  }
+  
